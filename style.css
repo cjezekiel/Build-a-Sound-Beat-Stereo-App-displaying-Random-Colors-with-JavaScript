@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Segoe UI Light';
+    color: #e6e6e6;
+}
+
+.root{
+    background-color: #161a17;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.root .beat{
+    color: rgb(134, 134, 134);
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.root .beat input{
+    background-color: #444;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    color: #909090;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 50px;
+    transform: scale(.9);
+}
+
+.root .sound-container{
+    width: 560px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #444; */
+}
+
+.root .sound-container .calibrator{
+    width: 55px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.root .sound-container .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.root .sound-container .wrapper .indicator{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-left: 1.5px solid #e6e6e6;
+    border-bottom: 1.5px solid #e6e6e6;
+    padding: 5px;
+}
+
+.root .sound-container .wrapper .indicator .bars{
+    width: 38px;
+    /* border: 1.5px solid #e6e6e6; */
+    height: 100px;
+    height: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: flex-end;
+    overflow: hidden;
+    margin: 0px 3px;
+    margin-right: 15px;
+}
+
+.root .bars .bar{
+    background-color: #f60da9;
+    width: 100%;
+    min-height: 8px;
+    margin-top: 5px;
+}
